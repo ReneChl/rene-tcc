@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f59191;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.typing {
+    font-size: 40px;
+    border-right: 2px solid blue;
+    white-space: nowrap;/*Espaço em branco ou espaço vazio*/
+    overflow: hidden;/*transbordamento, excesso, extravasamento, ou inundação*/
+}

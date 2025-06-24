@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Efeito de Digitação</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #f9f9f9;
+      padding: 50px;
+      text-align: center;
+    }
+    .digitando {
+      font-size: 24px;
+      border-right: 2px solid #000;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="digitando" id="texto"></div>
+
+  <script>
+    const texto = "Bem-vindo à nossa loja de estética facial!";
+    const elemento = document.getElementById("texto");
+    let index = 0;
+
+    function digitar() {
+      if (index < texto.length) {
+        elemento.innerHTML += texto.charAt(index);
+        index++;
+        setTimeout(digitar, 80); // Velocidade de digitação (em ms)
+      } else {
+        elemento.style.borderRight = "none"; // Remove o cursor ao final
+      }
+    }
+
+    window.onload = digitar;
+  </script>
+
+</body>
+</html>
