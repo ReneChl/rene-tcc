@@ -42,7 +42,7 @@ header a {
 }
 
 .carousel-text {
-    position: absolute;/*posiciona o elemento de forma abdoluta dentro do container pai com position: reçative*/
+    /*posiciona o elemento de forma abdoluta dentro do container pai com position: reçative*/
     top:50%;/**/
     left: 50%;
     transform: translate(-50%, -50%);/*centraliza o elemento axatamente no meio do container (corrige o deslocamento)*/
@@ -63,18 +63,22 @@ header a {
 
 .carousel-text p {
     font-size: 1.25rem;
+
 }
 
 .caixa-01 {
-    background-image: url(imagen/foto01.png);
+    background-image: url(imagen/1\ pele.webp);
+ 
 }
 
 .caixa-02 {
-    background-image: url(imagen/foto02.png);
+    background-image: url(imagen/3\ pele.jpg);
+    
 }
 
 .caixa-03 {
-    background-image: url(imagen/foto03.png);
+    background-image: url(imagen/4\ pele.jpg);
+    
     background-size: cover; /**/
     background-position: center;
 }
