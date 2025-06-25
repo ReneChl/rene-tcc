@@ -1,3 +1,16 @@
+window.revelar = ScrollReveal({reset:true});
+
+    revelar.reveal('.swiper', { // estou chamando a classe  a qual eu quero atribuir o efeito do scrollReveal
+        duration: 2500,
+        distance: '70px',
+        origin: 'left'
+    });
+
+
+
+
+
+
 //carrossel automatico sem botões nem interacções
 
 const swiper = new Swiper('.swiper', { //Inicializando o carrossel na classe ".swiper" usando a biblioteca swiper
