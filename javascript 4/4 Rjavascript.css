@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2rem 5rem;/*primer valor vertical e segundo valor horizontal*/
+    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #111;
+}
+.text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header a {
+    color:#fff ;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+/*Wsrilizando a SECTION*/
+.swiper {
+    height: 35rem;/*altura da sessão*/
+    position: relative;/*aqui estamos chamando uma das classes*/
+}
+
+/*estelizando das caixas (div) que guerdam as imagens*/
+.swiper-slide { /*aqui estamos chamando uma das clases*/
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-text {
+    position: absolute;/*posiciona o elemento de forma abdoluta dentro do container pai com position: reçative*/
+    top:50%;/**/
+    left: 50%;
+    transform: translate(-50%, -50%);/*centraliza o elemento axatamente no meio do container (corrige o deslocamento)*/
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    
+    background-color: #011a0f6c;
+    padding: 0.5rem;
+    border-radius: 20px; /*aumentei eu*/
+    
+}
+
+.carousel-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.carousel-text p {
+    font-size: 1.25rem;
+}
+
+.caixa-01 {
+    background-image: url(img/1pele.png);
+}
+
+.caixa-02 {
+    background-image: url(img/3\ pele.jpg);
+}
+
+.caixa-03 {
+    background-image: url(img/4\ pele.jpg);
+    background-size: cover; /**/
+    background-position: center;
+}
+
+
+
+/*responcivel*/
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+}
+
+section {
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    /*colocar código para esconder o menu*/
+    .ul-header {
+        display: none;
+    }
+    
+}
+
+@media(max-width: 168px)  {
+    html {
+        font-size: 30%;
+
+    }
+}
+
+@media(max-width: 168px)  {
+    main {
+        font-size: 25%;
+
+    }
+}
+
